@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.5ac6a27e.css",
-    "main.js": "/personal-portfolio/static/js/main.da5bd428.js",
+    "main.js": "/personal-portfolio/static/js/main.4a16ea8c.js",
     "static/js/453.2fa7cac9.chunk.js": "/personal-portfolio/static/js/453.2fa7cac9.chunk.js",
     "static/media/genshin.ttf": "/personal-portfolio/static/media/genshin.0509051ea175e37199f7.ttf",
     "static/media/ghibli-bg.png": "/personal-portfolio/static/media/ghibli-bg.72ac99a7e1d5f0eb9fd7.png",
@@ -16,11 +16,11 @@
     "index.html": "/personal-portfolio/index.html",
     "static/media/nav-icon1.svg": "/personal-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.5ac6a27e.css.map": "/personal-portfolio/static/css/main.5ac6a27e.css.map",
-    "main.da5bd428.js.map": "/personal-portfolio/static/js/main.da5bd428.js.map",
+    "main.4a16ea8c.js.map": "/personal-portfolio/static/js/main.4a16ea8c.js.map",
     "453.2fa7cac9.chunk.js.map": "/personal-portfolio/static/js/453.2fa7cac9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ac6a27e.css",
-    "static/js/main.da5bd428.js"
+    "static/js/main.4a16ea8c.js"
   ]
 }
