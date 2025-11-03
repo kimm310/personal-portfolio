@@ -6,6 +6,7 @@ import {Col, Container, Nav, Row, Tab} from "react-bootstrap";
 
 export const Projects = () => {
     const projects = [
+        /*
         {
             title: "Fitness App",
             description: "Android mobile app that tracks your physical and mental health",
@@ -15,16 +16,17 @@ export const Projects = () => {
             title: "Traffic Photo-Analysis App",
             description: "Android mobile app that accesses your phone camera and sends pictures to ChatGPT for analysis",
             imgUrl: projImg2
-        }
+        }*/
+
     ];
 
     return (
-        <section className="project" id="project">
+        <section className="projects" id="projects">
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>Most of my programming experiences come from student projects.</p>
+                        <h2>What I've Built</h2>
+                        <p>This is soon to be filled with my personal projects.</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
 
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">

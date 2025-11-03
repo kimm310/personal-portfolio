@@ -63,12 +63,15 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: var(--brown);
 }
+nav.navbar.scrolled .navbar-nav .nav-link.navbar-link{
+  color: var(--white) !important;
+}
 nav.navbar a.navbar-brand {
   width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: var(--white) !important;
+  color: var(--brown) !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -119,10 +122,14 @@ span.navbar-text {
 .social-icon a:hover img {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-.navbar-text button {
-  font-weight: 400; /* makes the text bold and white */
+.navbar.scrolled .navbar-text button {
   color: var(--white);
   border: 1px solid var(--white);
+}
+.navbar-text button {
+  font-weight: 400;
+  color: var(--brown);
+  border: 1px solid var(--brown);
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px; /* gives space to the previous element */
@@ -144,7 +151,7 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 } /* Define a pseudo-element where the hover effect background animation starts */
-.navbar-text button:hover {
+.navbar.scrolled .navbar-text button:hover {
   color: var(--brown);
 } /* Change text color on hover to dark, smoothly animated because the button has ease-in-out transition*/
 .navbar-text button:hover::before {
@@ -315,17 +322,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /************ Projects Css ************/
-.project {
+.projects {
   padding: 80px 0;
   position: relative;
   background-color: var(--white);
 }
-.project h2 {
+.projects h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
-.project p {
+.projects p {
   color: var(--brown);
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -334,17 +341,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-.project .nav.nav-pills {
+.projects .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
-.project .nav.nav-pills .nav-item {
+.projects .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
-.project .nav.nav-pills .nav-link {
+.projects .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
@@ -358,7 +365,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-.project .nav.nav-pills .nav-link::before {
+.projects .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
   width: 0;
@@ -369,10 +376,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.project .nav.nav-pills .nav-link.active::before {
+.projects .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
-.project .nav.nav-pills .nav-link.active {
+.projects .nav.nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 .nav-link#projects-tabs-tab-first {
@@ -440,3 +447,92 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+
+/************ Contact CSS ************/
+.contact {
+  background: var(--white);
+  padding: 60px 0 200px 0;
+}
+.contact img {
+  width: 92%;
+}
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--brown)
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: var(--brown);
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brown);
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--brown);
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: var(--brown);
+}
+.contact form button::before {
+  content: "";
+  background: var(--white);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
+}
+
+/************ Footer Css ************/
+.footer {
+  padding: 0 0 50px 0;
+}
+.footer img {
+  width: 26%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
