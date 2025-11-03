@@ -36,9 +36,6 @@ export const Banner = () => {
                         <p>I am an aspiring software developer currently exploring frontend web development in React.</p>
                         <button onClick={() => window.open("https://github.com/kimm310")}>Check out my Github!<ArrowRightCircle size={25}/></button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="cool cat" style={{ opacity: 0 }}/>    {/*For now, make it invisible*/}
-                    </Col>
                 </Row>
             </Container>
         </section>
