@@ -1,7 +1,7 @@
-## Welcome to my personal portfolio website
-You can visit my website under the following link: https://kimm310.github.io/personal-portfolio .
+# Welcome!
+You can visit my portfolio website under the following link: https://kimm310.github.io/personal-portfolio .
 
-## Tools used
+### Tools used
 
-This project was initially created with [Create React App](https://create-react-app.dev/docs/getting-started/). For styling, I used [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
-For the backend, I used Node, Express, CORS and Nodemailer.
+This project was initially created with [Create React App](https://create-react-app.dev/docs/getting-started/). For styling, I use [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+For the backend, I use Node, Express, CORS and Nodemailer.
