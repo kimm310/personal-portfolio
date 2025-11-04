@@ -1,4 +1,4 @@
-# Welcome!
+## Welcome!
 You can visit my portfolio website under the following link: https://kimm310.github.io/personal-portfolio .
 
 ### Tools used
