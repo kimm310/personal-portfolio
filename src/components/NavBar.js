@@ -49,8 +49,9 @@ export const NavBar = () => {
                     {/* Navigate through links */}
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+                        {/*<Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                         <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        */}
                     </Nav>
                     {/* Add additional links to social media*/}
                     <span className="navbar-text">
@@ -58,7 +59,13 @@ export const NavBar = () => {
                             <a href="https://www.linkedin.com/in/ho-thien-kim-nguyen-181b6a320" target="_blank" rel="noopener noreferrer"> <img src={navIcon1} alt="LinkedIn"/> </a>
                             <a href="https://github.com/kimm310" target="_blank" rel="noopener noreferrer"> <img src={navIcon2} alt="GitHub"/> </a>
                         </div>
-                        <button className="vvd" onClick={() => console.log('connect')}>
+                        <button className="vvd" onClick={() => {
+                            const section = document.getElementById("connect");
+                            if (section) {
+                            section.scrollIntoView({ behavior: "smooth" });
+                            }
+                        }}
+                        >
                             <span>Let's Connect</span>
                         </button>
                     </span>

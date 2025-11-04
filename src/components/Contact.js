@@ -1,6 +1,8 @@
 import {useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import contactImg from "../assets/img/cool-cat.png"
+import contactImg from "../assets/img/contact-totoro.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
 
@@ -46,10 +48,18 @@ export const Contact = () => {
 
     return (
         <section className="contact" id="connect">
+
+
+
+
             <Container>
+                <TrackVisibility>
+                    {({ isVisible}) =>
+                        <div className={isVisible ? "animate__animated animate__fadeInUp" : "animate__animated animate__fadeOutDown"}
+                             style={{ opacity: isVisible ? 1 : 0, transition: "opacity 0.5s ease-in" }}>
                 <Row className="align-items-center">
                     <Col size={12} md={6}>
-                        <img src={contactImg} alt="Contact Me"/>
+                        <img src={contactImg} alt="Contact Me" className="img-fluid w-50"/>
                     </Col>
                     <Col size={12} md={6}>
                         <h2>Get In Touch</h2>
@@ -81,7 +91,10 @@ export const Contact = () => {
                         </form>
                     </Col>
                 </Row>
+                </div>}
+                </TrackVisibility>
             </Container>
+
         </section>
     )
 }

@@ -32,7 +32,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{``}<span className="wrap">{text}</span></h1>
+                        <h1 className="display-4 display-md-3 display-lg-1">{``}<span className="wrap" >{text}</span></h1>
                         <p>I am an aspiring software developer currently exploring frontend web development in React.</p>
                         <button onClick={() => window.open("https://github.com/kimm310")}>Check out my Github!<ArrowRightCircle size={25}/></button>
                     </Col>
